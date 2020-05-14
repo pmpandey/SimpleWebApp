@@ -11,7 +11,7 @@ public class EmployeeDao {
         int result = 0;
         Class.forName("com.mysql.jdbc.Driver");
         try (Connection connection = DriverManager
-            .getConnection("jdbc:mysql://localhost:3306/DB?useSSL=false", "root", "Pratham1*");
+            .getConnection("jdbc:mysql://localhost:3306/DB?useSSL=false", "root", "prathamp123");
             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
             preparedStatement.setInt(1, 1);
             preparedStatement.setString(2, employee.getFirstName());
